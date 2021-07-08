@@ -36,11 +36,10 @@ function gpfs_duo
         do  
             echo "请输入你的0x开头的钱包地址："
             read qb
-            qb=`cat /gpfs/file.txt | sed -n "${i}p"`
             mkdir /gpfs/gpfs${i}
             cd /gpfs/gpfs${i}
             export IPFS_PATH=/gpfs/gpfs${i}
-            echo "IPFS_PATH=$IPFS_PATH"
+            echo "设置环境变量IPFS_PATH=$IPFS_PATH"
             gpfs daemon --init  >& /gpfs/gpfs${i}/output.log
             sleep 3 
             if (("$i" < 9)); then
@@ -54,6 +53,7 @@ function gpfs_duo
            fi
            sleep 1
            nohup gpfs daemon --init --miner-address=$qb > /gpfs/output${i}.log 2>&1 &
+           echo "gpfs${i}已部署完成，日志查看tail -f /gpfs/output${i}.log"
         done
 }
 

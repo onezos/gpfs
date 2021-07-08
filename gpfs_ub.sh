@@ -16,8 +16,8 @@ function gpfs_rm
 
 function gpfs_down
 {
-    yum install -y wget
-    yum install -y unzip 
+    apt install -y wget
+    apt install -y unzip 
     mkdir /gpfs
     cp $(pwd)/file.txt /gpfs/
     cd /gpfs 
@@ -30,10 +30,12 @@ function gpfs_down
 
 function gpfs_duo
 {
-    tCnt=`awk 'END{print NR}' /gpfs/file.txt`
+    echo "请输入要搭建的gpfs节点数量"
+    read tCnt
     for ((i=1; i<=tCnt; i ++))
         do  
-            qb=`cat /gpfs/file.txt | sed -n "${i}p"`
+            echo "请输入你的0x开头的钱包地址："
+            read qb
             mkdir /gpfs/gpfs${i}
             cd /gpfs/gpfs${i}
             export IPFS_PATH=/gpfs/gpfs${i}

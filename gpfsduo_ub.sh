@@ -16,8 +16,8 @@ function gpfs_rm
 
 function gpfs_down
 {
-    yum install -y wget
-    yum install -y unzip 
+    apt install -y wget
+    apt install -y unzip 
     mkdir /gpfs
     cp $(pwd)/file.txt /gpfs/
     cd /gpfs 
