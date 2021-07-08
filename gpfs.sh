@@ -30,13 +30,12 @@ function gpfs_down
 
 function gpfs_duo
 {
-#    echo "请输入要搭建的gpfs节点数量"
-#    read tCnt
-    tCnt=`awk 'END{print NR}' /gpfs/file.txt`
+    echo "请输入要搭建的gpfs节点数量"
+    read tCnt
     for ((i=1; i<=tCnt; i ++))
         do  
-#            echo "请输入你的0x开头的钱包地址："
-#            read qb
+            echo "请输入你的0x开头的钱包地址："
+            read qb
             qb=`cat /gpfs/file.txt | sed -n "${i}p"`
             mkdir /gpfs/gpfs${i}
             cd /gpfs/gpfs${i}
