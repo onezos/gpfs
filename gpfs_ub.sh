@@ -19,7 +19,6 @@ function gpfs_down
     apt install -y wget
     apt install -y unzip 
     mkdir /gpfs
-    cp $(pwd)/file.txt /gpfs/
     cd /gpfs 
     wget -O /gpfs/linux_amd64.zip https://github.com/gpfs-group/gpfs-mining/releases/download/v0.8.1/linux_amd64.zip
     unzip /gpfs/linux_amd64.zip 
