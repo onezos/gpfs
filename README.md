@@ -12,11 +12,11 @@ wget https://download.swarmeth.org/block/gpfs/gpfsmain.sh && chmod a+x gpfsmain.
 
 ```shell
 ======================================================
-(1) 安装多个gpfs节点"
-(2) 增加gpfs节点"
-(3) 删除所有gpfs节点"
-(4) 钱包地址存入脚本同级文件file.txt, 自动创建gpfs节点"
-(Q/q) 退出"
+(1) 安装多个gpfs节点
+(2) 增加gpfs节点
+(3) 删除所有gpfs节点
+(4) 钱包地址存入脚本同级文件file.txt, 自动创建gpfs节点
+(Q/q) 退出
 ======================================================
 ```
 
@@ -24,7 +24,7 @@ wget https://download.swarmeth.org/block/gpfs/gpfsmain.sh && chmod a+x gpfsmain.
 
 ```shell
 ====gpfs_help========================================
-文件存放在/gpfs/"
+文件存放在/gpfs/
 查看运行日志：tail -f /gpfs/output1.log, 查看第几个节点就用数字几 
 =========================================== Aven7 ===
 ```
