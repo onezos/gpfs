@@ -36,7 +36,7 @@ function gpfs_init
     mkdir /gpfs
     if [ -f $(pwd)/file.txt ];then
         cp $(pwd)/file.txt /gpfs/
-    if
+    fi
     cd /gpfs 
     wget -O /gpfs/linux_amd64.zip https://github.com/gpfs-group/gpfs-mining/releases/download/v0.8.1/linux_amd64.zip
     unzip /gpfs/linux_amd64.zip 
