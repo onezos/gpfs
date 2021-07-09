@@ -1,6 +1,39 @@
 # GPFS自动化脚本使用方法
 
-#### centos自动，需要在同级文件夹建立file.txt，每一行写入一个eth钱包地址。
+#### 20210708更新脚本功能
+
+执行脚本
+
+```shell
+wget https://download.swarmeth.org/block/gpfs/gpfsmain.sh && chmod a+x gpfsmain.sh && ./gpfsmain.sh
+```
+
+安装面板
+
+```shell
+======================================================
+(1) 安装多个gpfs节点"
+(2) 增加gpfs节点"
+(3) 删除所有gpfs节点"
+(4) 钱包地址存入脚本同级文件file.txt, 自动创建gpfs节点"
+(Q/q) 退出"
+======================================================
+```
+
+安装完成提示
+
+```shell
+====gpfs_help========================================
+文件存放在/gpfs/"
+查看运行日志：tail -f /gpfs/output1.log, 查看第几个节点就用数字几 
+=========================================== Aven7 ===
+```
+
+------------------------------------------------------------------------------------------
+
+#### 以下为旧版本
+
+#### Centos自动，需要在同级文件夹建立file.txt，每一行写入一个eth钱包地址。
 
 1.先编辑`file.txt`
 
@@ -59,3 +92,9 @@ MetaMask需要使用chrome浏览器。
 
 添加合约 [![img](https://raw.githubusercontent.com/gpfs-group/airdrop/main/image/4.png)](https://raw.githubusercontent.com/gpfs-group/airdrop/main/image/4.png)
 
+
+
+--------------------------------------------------------------------------------------
+
+作者赞赏码：<br>
+<img src="https://download.swarmeth.org/zan.jpg" width = "400" height = "400" alt="点赞" align=center />
