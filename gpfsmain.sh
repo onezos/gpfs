@@ -156,7 +156,9 @@ do
             gpfs_rm
             ;;
         4)
+            gpfs_init
             gpfs_file_main
+            gpfs_help
             exit
             ;;
         q|Q)
