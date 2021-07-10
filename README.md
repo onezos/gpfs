@@ -96,5 +96,4 @@ MetaMask需要使用chrome浏览器。
 
 --------------------------------------------------------------------------------------
 
-作者赞赏码：<br>
-<img src="https://download.swarmeth.org/zan.jpg" width = "400" height = "400" alt="点赞" align=center />
+作者捐赠地址：0x6a3f3D5F8975AB600b5428a6f79b6d3A706bead4
